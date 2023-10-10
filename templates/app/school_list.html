@@ -1,0 +1,18 @@
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+    <title>School_List</title>
+
+{% endblock %}
+
+{% block body_block %}
+
+<h1>
+    School_List
+</h1>
+{% for sc in schl %}
+    <a href="{{sc.pk}}"><h3>{{sc.Sname}}</h3></a>
+{% endfor %}
+
+{% endblock %}
+
